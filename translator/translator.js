@@ -18,18 +18,9 @@ function querySearch (input) {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", apiUrl);
     xhr.send();
-    xhr.addEventListener('load', function(e){
+    xhr.addEventListener('load', function(){
 
-		var data = e.target.response;
-        console.log(data);
-		displayData(data);
-	});
-}
+	    document.querySelector("#translated").innerHTML = xhr.responseText;
 
-function displayData (data){
-
-    var translated = document.querySelector("#translated");
-    translated.innerHTML = "";
-    translated.innerHTML = data;
-
+    });
 }

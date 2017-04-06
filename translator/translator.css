@@ -18,7 +18,7 @@ html, body {
 body{
 
 
-    background: #4c5159; /* fallback for old browsers */
+    background: #4c5159;
     font-family: 'Dosis', sans-serif;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     border: 1px solid #757575;
     background-color: #03a9f4;
     max-width: 60%;
